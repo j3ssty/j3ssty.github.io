@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal site</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Base Reset & Variables */
+        :root {
+            --primary-color: #0366d6;
+            --text-color: #333333;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --border-color: #e1e4e8;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            line-height: 1.7;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        /* Header Styling */
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid var(--primary-color);
+        }
+
+        h1 {
+            color: #1a1a1a;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Section Styling */
+        .section {
+            background: var(--card-bg);
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border: 1px solid var(--border-color);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+            margin-top: 0;
+        }
+
+        /* Lists & Grid Layouts */
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Links & Buttons */
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .link-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        .link-list li a {
+            background: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .link-list li a:hover {
+            background: #024da2;
+            text-decoration: none;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome! I'm Letema Kutto</h1>
+        <p class="subtitle">Mechatronics Engineering Student & Tech Enthusiast</p>
+    </header>
+
+    <main>
+        <!-- About Me Section -->
+        <div class="section">
+            <h2>About Me</h2>
+            <p>I am an ambitious student currently pursuing <strong>Computer Science</strong>. My academic journey is driven by a deep fascination with how hardware and software intersect to create intelligent systems. Beyond my core engineering studies, I am actively exploring the realms of cybersecurity, machine learning, and advanced robotics to build a robust, multi-disciplinary skill set.</p>
+        </div>
+
+        <!-- Academic & Research Interests Grouped in a Grid -->
+        <div class="grid-container">
+            <div class="section">
+                <h2>Core Interests</h2>
+                <ul>
+                    <li><strong>Mechatronics & Prosthetics:</strong> Designing smart bio-mechanical limbs.</li>
+                    <li><strong>Cybersecurity & Networking:</strong> Securing IoT devices and industrial infrastructure.</li>
+                    <li><strong>Computer Programming:</strong> Writing clean, efficient, and scalable code.</li>
+                    <li><strong>Artificial Intelligence:</strong> Leveraging data to build autonomous systems.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Current Learning Modules</h2>
+                <ul>
+                    <li><strong>Version Control:</strong> Advanced Git workflows and GitHub collaboration.</li>
+                    <li><strong>AI & Programming:</strong> Python software development and data science libraries.</li>
+                    <li><strong>Biological Systems:</strong> Analyzing musculoskeletal dynamics for prosthetic integration.</li>
+                    <li><strong>Network Architecture:</strong> Understanding secure communication protocols.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Artificial Intelligence Focus Section (Great for your AI class) -->
+        <div class="section">
+            <h2>Artificial Intelligence & Engineering</h2>
+            <p>In my current coursework, I am diving deep into how Artificial Intelligence enhances modern Mechatronics. I am learning to integrate machine learning algorithms with physical hardware, aiming to transition traditional automated machinery into fully adaptive, intelligent systems. This intersection is crucial for my long-term goals in developing reactive prosthetics and secure automated networks.</p>
+        </div>
+
+        <!-- Combined and Cleaned Navigation Links Section -->
+        <div class="section">
+            <h2>Connect & Explore</h2>
+            <p>Check out my project documentation and source code through the links below:</p>
+            <ul class="link-list">
+                <li><a href="Projects.html">View My Projects</a></li>
+                <li><a href="https://github.com/Kimiti4" target="_blank" rel="noopener noreferrer">My GitHub Profile</a></li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Letema Kutto. Built for Educational Portfolio .</p>
+    </footer>
+
+</body>
+</html>
